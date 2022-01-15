@@ -1,0 +1,368 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+/* common classes */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+    .container{
+        width: 1110px;
+        margin-bottom: 100px;
+    }
+
+p{
+    font-size: 16px;
+    font-weight: 600;
+}
+/* header part */
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 87px;
+    margin-bottom: 50px;
+    
+}
+.banner-title{
+    font-size: 52px;
+    font-weight: 700;
+}
+.banner-left{
+    
+    padding-right: 45px;
+    padding-top: 23px;
+}
+
+.header h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #3A3A3A;
+
+}
+/* nav part */
+nav{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 34px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3A3A3A;
+}
+nav span i{
+    margin-right: 34px;
+}
+
+
+/* banner part */
+.banner-p-color{
+    color: #3A3A3A;
+
+}
+.banner-right{
+    
+    padding-left: 45px;
+    background: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    
+}
+.banner .banner-right img{
+    width: 440px;
+    height: 400px;
+}
+
+.banner-left.banner-btn i{
+    margin-left: 13px;
+}
+.banner-btn{
+    background: #E02C6D;
+    padding: 10px 24px;
+    border-radius: 41px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+.our-company{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 36px;
+}
+hr{
+    border: 1px solid #dcdfe342;
+
+}
+
+
+/* populart collection part */
+
+
+.popular-Collection h2{
+    font-size: 28px;
+    font-weight: 600;
+    color: #3A3A3A
+}
+.popular-Collection h3{
+    font-size: 28px;
+    font-weight: 500;
+    color: #18191F;
+}
+.popular-Collection h4{
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+}
+.collection-p-color{
+    color: #787885;
+
+}
+.popular-Collection{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    padding-top: 40px;
+}
+.collection{
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     margin-right: 30px;
+}
+.sec-more h3{
+    text-align: right;
+    font-size: 16px;
+    font-weight: 700;
+    color: #E02C6DDE;
+    margin-top: 50px;
+
+}
+.filled{
+    color: #FB8200;
+
+}
+
+
+
+
+
+
+
+
+
+/* featured products area */
+
+
+
+.featured-products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-area{
+    flex: 1;
+    padding: 4%;
+}
+.right-area{
+    flex: 2;
+    padding: 4%;
+}
+.secondary-btn{
+    padding: 10px 24px;
+    background: #E02C6D;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-top: 25px;
+}
+.secondary-btn i{
+    margin-left: 13px;
+}
+
+
+/* footer area */
+
+
+.footer{
+    background: #0A0826;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+ .social-media-icons i{
+    padding: 10px;
+    font-size: 30px;
+    width: 32px;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    background: #161432;
+}
+
+
+/* media query */
+
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .header{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    nav{
+        display: none;
+    }
+    .banner-title{
+        font-size: 28px;
+    }
+    .banner-right{
+        background-size: contain;
+    }
+    .right-area{
+        text-align: center;
+    }
+    .banner-p-color,.collection-p-color{
+        font-size: 14px;
+    }
+    .banner,.featured-products{
+        flex-direction: column;
+    gap: 30px;
+    margin-bottom: 100px;
+    }
+    .banner-left{
+        width: 100%;
+    text-align: center;
+    }
+    .banner .banner-right img,.left-area img{
+        width: 100%;
+    }
+
+    .right-area h1{
+        font-size: 24px;
+    }
+    .collection{
+        margin-right:0 ;
+    }
+    .popular-Collection h2{
+        font-size: 16px;
+    }
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .our-company{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .collection .thumbnails img{
+        width: 100%;
+    }
+    .popular-Collection {
+        padding: 5%;
+    }
+}
+
+
+
+
+@media only screen and (min-width:686px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .header{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    nav{
+        display: none;
+    }
+    .banner-title{
+        font-size: 40px;
+    }
+    .banner-right{
+        background-size: contain;
+    }
+    .right-area{
+        text-align: center;
+    }
+    .banner-p-color,.collection-p-color{
+        font-size: 18px;
+    }
+    .banner,.featured-products{
+        flex-direction: column;
+        gap: 30px;
+        display: flex;
+        align-items: center;
+    }
+    .banner-left{
+        width: 100%;
+    text-align: center;
+    }
+    .banner .banner-right img,.left-area img{
+        width: 100%;
+    }
+
+    .right-area h1{
+        font-size: 40px;
+    }
+    .collection{
+        margin-right:0 ;
+    }
+    .popular-Collection h2{
+        font-size: 16px;
+    }
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 20px;
+    }
+    .our-company{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .collection .thumbnails img{
+        width: 100%;
+    }
+    .popular-Collection {
+        padding: 5%;
+    }
+    .sec-more{
+        
+    margin-right: 40px;
+
+    }
+}
+
